@@ -4,11 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        header: "#2A2A2A",
+        main: "#1F2937",
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif"],
         raj: ["Rajdhani", "sans-serif"],
+      },
+      screens: {
+        "8xl": "1400px",
       },
     },
   },
