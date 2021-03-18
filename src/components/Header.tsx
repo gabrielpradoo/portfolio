@@ -9,7 +9,7 @@ export function Header() {
       >
         <h1 className="text-5xl font-bold px-4">Gabriel do Prado</h1>
         <nav className=" flex items-center gap-24 text-2xl font-bold max-md:hidden">
-          <Link href="#">
+          <Link href="#AboutMe">
             <a className="px-4 py-2 hover:opacity-80">About Me</a>
           </Link>
           <Link href="#">
