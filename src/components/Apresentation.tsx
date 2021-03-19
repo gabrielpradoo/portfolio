@@ -19,13 +19,17 @@ export function Apresentation() {
       </div>
 
       <div id="social" className="flex space-x-12 mb-12">
-        <a href="#">
+        <a
+          href="https://github.com/praadin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/GitHub.svg" alt="GitHub" className="w-11 h-11" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img src="/icons/Linkedin.svg" alt="Linkedin" className="w-11 h-11" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src="/icons/Instagram.svg"
             alt="Instagram"

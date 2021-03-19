@@ -5,7 +5,7 @@ export function AboutMe() {
         id="AboutMe"
         className="max-w-screen-8xl mx-auto flex px-4 pt-12 pb-12 space-y-4 
           flex-col 
-          max-md:space-y-6 
+          space-y-10 
           max-md:items-center
           max-md:space-x-0
           max-md:py-12
@@ -19,7 +19,7 @@ export function AboutMe() {
             flex flex-col
             w-full
             items-center
-            max-md:space-y-6  
+            space-y-6  
           "
         >
           <h3
@@ -32,7 +32,9 @@ export function AboutMe() {
           </h3>
           <a
             href="#"
-            className="px-4 py-2 bg-white text-main font-raj font-semibold rounded w-1/2 text-center"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-white text-main font-raj font-semibold rounded max-w-xs w-1/2 text-center"
           >
             Check my Resume/CV
           </a>
