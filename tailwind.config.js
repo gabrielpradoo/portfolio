@@ -12,7 +12,7 @@ module.exports = {
       },
       screens: {
         "8xl": "1400px",
-        "max-midlle": { max: "900px" },
+        "max-midlle": { max: "1050px" },
         "max-md": { max: "768px" },
         "max-sm": { max: "640px" },
       },

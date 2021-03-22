@@ -1,39 +1,31 @@
 export function ProjectsCard() {
   const projects = [
     {
-      Name: "Move-it 1",
-      Img: "/img/move-it.png",
+      Name: "Gabriel do Prado - Personal Porfólio",
+      Img: "/img/portfolio.png",
       Url: "https://moveit-nlw99.vercel.app/",
-      Code: "https://github.com/praadin/move-it",
+      Code: "https://github.com/praadin/portfolio",
       Description:
-        "Move.it help peoples that stay long times on computer. With some challenges for you to move your body and eyes.",
-      Techs: [
-        "NextJs",
-        "ReactJs",
-        "Typescript",
-        "Javascript",
-        "MongoDB",
-        "Sass",
-        "Tailwind",
-      ],
+        "This is my personal portfolio made for people to see my projects and experiences.",
+      Techs: ["NextJs", "Typescript", "Tailwind"],
     },
     {
-      Name: "Move-it 2",
+      Name: "Move-it",
       Img: "/img/move-it.png",
       Url: "https://moveit-nlw99.vercel.app/",
       Code: "https://github.com/praadin/move-it",
       Description:
         "Move.it help peoples that stay long times on computer. With some challenges for you to move your body and eyes.",
-      Techs: ["NextJs", "ReactJs", "Tailwind Css"],
+      Techs: ["NextJs", "Typescript", "Css"],
     },
     {
-      Name: "Move-it 3",
-      Img: "/img/move-it.png",
-      Url: "https://moveit-nlw99.vercel.app/",
-      Code: "https://github.com/praadin/move-it",
+      Name: "Spider-Man Hero Page",
+      Img: "/img/spiderman.png",
+      Url: "https://spiderman-pradin.vercel.app/",
+      Code: "https://github.com/praadin/spiderman",
       Description:
-        "Move.it help peoples that stay long times on computer. With some challenges for you to move your body and eyes.",
-      Techs: ["NextJs", "ReactJs", "Tailwind"],
+        "Spider-Man Hero page created to learn Sass and Design principles.",
+      Techs: ["Html", "Sass", "Javascript"],
     },
   ];
 
@@ -43,11 +35,15 @@ export function ProjectsCard() {
         <div
           id="ProjectCard"
           className="flex justify-around items-center bg-gray-300 p-6 rounded-md shadow-xl
-       max-md:flex-col  max-md:space-y-5 font-raj
-     "
+          max-md:flex-col  max-md:space-y-5 font-raj
+          "
         >
           <div id="left" className="w-2/5  max-md:w-11/12">
-            <img src={item.Img} alt={item.Name} />
+            <img
+              src={item.Img}
+              alt={item.Name}
+              className="border border-gray-100"
+            />
           </div>
           <div
             id="divider"
@@ -106,6 +102,10 @@ export function ProjectsCard() {
                     return (
                       <img src="/icons/Tailwind.svg" alt="Tailwind Logo" />
                     );
+                  } else if (tech == "Css") {
+                    return <img src="/icons/Css.svg" alt="Css3 Logo" />;
+                  } else if (tech == "Html") {
+                    return <img src="/icons/Html.svg" alt="Html Logo" />;
                   }
                 })}
               </div>

@@ -24,8 +24,8 @@ export function AboutMe() {
         >
           <h3
             className="
-            font-raj font-semibold text-8xl
-            max-sm:text-7xl 
+            font-raj font-semibold text-6xl
+            max-sm:text-5xl 
           "
           >
             About Me
