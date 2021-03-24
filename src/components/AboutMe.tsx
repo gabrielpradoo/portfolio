@@ -36,7 +36,7 @@ export function AboutMe() {
             rel="noopener noreferrer"
             className="px-4 py-2 bg-white text-main font-raj font-semibold rounded max-w-xs w-1/2 text-center"
           >
-            Check my Resume/CV
+            Check my Resume
           </a>
         </div>
         <div
