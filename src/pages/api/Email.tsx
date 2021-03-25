@@ -1,37 +1,30 @@
 import nodemailer from "nodemailer";
 import { NextApiRequest, NextApiResponse } from "next";
 
-import config from "../../../smtp";
-
 export default async function sendEmail(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   const transporter = nodemailer.createTransport({
-    host: config.host,
-    port: config.port,
+    host: "smtp.gmail.com",
+    port: 587,
     secure: false,
     auth: {
-      user: config.user,
-      pass: config.pass,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
     tls: {
       rejectUnauthorized: false,
     },
   });
 
-  transporter
-    .sendMail({
-      from: `"GABRIEL DEV PORTFOLIO 🖥️" <${config.user}>`,
-      to: "gdeoliveira.1999@gmail.com, g.prado0102@gmail.com",
-      replyTo: req.body.email,
-      subject: "CONTATO FEITO PELO PORTFOLIO",
-      text: req.body.message,
-    })
-    .then((response) => {
-      res.send(response);
-    })
-    .catch((error) => {
-      res.send(error);
-    });
+  let info = await transporter.sendMail({
+    from: `"GABRIEL DEV PORTFOLIO 🖥️" <${process.env.SMTP_USER}>`,
+    to: "gdeoliveira.1999@gmail.com, g.prado0102@gmail.com",
+    replyTo: req.body.email,
+    subject: "CONTATO FEITO PELO PORTFOLIO",
+    text: req.body.message,
+  });
+
+  res.send(info);
 }

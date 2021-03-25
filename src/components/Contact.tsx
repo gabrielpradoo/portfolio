@@ -20,11 +20,9 @@ export function Contact() {
         }),
       })
         .then((response) => {
-          console.log(response);
           alert("E-mail enviado com sucesso");
         })
         .catch((error) => {
-          console.log(error);
           alert("Erro ao enviar e-mail");
         });
     });
