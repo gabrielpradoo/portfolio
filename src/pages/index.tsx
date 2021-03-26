@@ -1,4 +1,4 @@
-import { Head } from "next/document";
+import Head from "next/head";
 import { AboutMe } from "../components/AboutMe";
 import { Apresentation } from "../components/Apresentation";
 import { Contact } from "../components/Contact";
@@ -11,6 +11,13 @@ export default function Home() {
   return (
     <>
       <div className="bg-gray-100">
+        <Head>
+          <title>Gabriel Prado Dev</title>
+          <meta
+            name="description"
+            content="Gabriel do Prado de Oliveira - PersonalPortfolio - Fullstack Developer"
+          />
+        </Head>
         <Header />
         <Apresentation />
         <AboutMe />
