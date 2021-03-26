@@ -1,3 +1,21 @@
+const social = [
+  {
+    name: "GitHub",
+    src: "/icons/GitHub.svg",
+    href: "https://github.com/praadin",
+  },
+  {
+    name: "LinkedIn",
+    src: "/icons/Linkedin.svg",
+    href: "https://www.linkedin.com/in/gabriel-do-prado-de-oliveira/",
+  },
+  {
+    name: "Instagram",
+    src: "/icons/Instagram.svg",
+    href: "https://www.instagram.com/gabrielpraado_/",
+  },
+];
+
 export function Apresentation() {
   return (
     <section className="mx-auto flex flex-col items-center space-y-12 bg-gray-300 py-12 font-raj">
@@ -19,31 +37,15 @@ export function Apresentation() {
       </div>
 
       <div id="social" className="flex space-x-12 mb-12">
-        <a
-          href="https://github.com/praadin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/icons/GitHub.svg" alt="GitHub" className="w-11 h-11" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/gabriel-do-prado-de-oliveira/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/icons/Linkedin.svg" alt="Linkedin" className="w-11 h-11" />
-        </a>
-        <a
-          href="https://www.instagram.com/gabrielpraado_/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/icons/Instagram.svg"
-            alt="Instagram"
-            className="w-11 h-11"
-          />
-        </a>
+        {social.map((item) => (
+          <a href={item.href} target="_blank" rel="noopener noreferrer">
+            <img
+              src={item.src}
+              alt={`${item.name} logo`}
+              className="w-11 h-11"
+            />
+          </a>
+        ))}
       </div>
     </section>
   );
