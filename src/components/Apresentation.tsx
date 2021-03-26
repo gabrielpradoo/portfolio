@@ -1,22 +1,24 @@
+import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+
 const social = [
   {
     name: "GitHub",
-    src: "/icons/GitHub.svg",
+    src: "AiFillGithub",
     href: "https://github.com/praadin",
   },
   {
     name: "LinkedIn",
-    src: "/icons/Linkedin.svg",
+    src: "AiFillLinkedin",
     href: "https://www.linkedin.com/in/gabriel-do-prado-de-oliveira/",
   },
   {
     name: "Instagram",
-    src: "/icons/Instagram.svg",
+    src: "AiFillInstagram",
     href: "https://www.instagram.com/gabrielpraado_/",
   },
 ];
 
-export function Apresentation() {
+export function Apresentation({}) {
   return (
     <section className="mx-auto flex flex-col items-center space-y-12 bg-gray-300 py-12 font-raj">
       <img
@@ -39,11 +41,15 @@ export function Apresentation() {
       <div id="social" className="flex space-x-12 mb-12">
         {social.map((item) => (
           <a href={item.href} target="_blank" rel="noopener noreferrer">
-            <img
-              src={item.src}
-              alt={`${item.name} logo`}
-              className="w-11 h-11"
-            />
+            {item.src === "AiFillGithub" && (
+              <AiFillGithub className="w-11 h-11 text-main" />
+            )}
+            {item.src === "AiFillLinkedin" && (
+              <AiFillLinkedin className="w-11 h-11 text-main" />
+            )}
+            {item.src === "AiFillInstagram" && (
+              <AiFillInstagram className="w-11 h-11 text-main" />
+            )}
           </a>
         ))}
       </div>

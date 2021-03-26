@@ -22,7 +22,7 @@ export default async function sendEmail(
     from: `"GABRIEL DEV PORTFOLIO 🖥️" <${process.env.SMTP_USER}>`,
     to: "gdeoliveira.1999@gmail.com, g.prado0102@gmail.com",
     replyTo: req.body.email,
-    subject: "CONTATO FEITO PELO PORTFOLIO",
+    subject: `PORTFOLIO - ${req.body.name}`,
     text: req.body.message,
   });
 
