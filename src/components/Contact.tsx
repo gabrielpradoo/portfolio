@@ -1,12 +1,18 @@
+import { useState } from "react";
+
 export function Contact() {
+  const [name, setName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [message, setMessage] = useState<string>();
+
   function sendEmail() {
     const form = document.getElementById("form");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const name = document.getElementById("name").value;
+      /* const name = (<HTMLInputElement>document.getElementById("name")).value;
       const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
+      const message = document.getElementById("message").value; */
 
       fetch("/api/email", {
         method: "POST",
@@ -70,12 +76,16 @@ export function Contact() {
               type="text"
               id="name"
               placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className=" w-6/12 py-2 px-4 rounded max-midlle:w-full outline-none text-main font-bold"
             />
             <input
               type="text"
               id="email"
               placeholder="E-mail address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className=" w-6/12 py-2 px-4 rounded max-midlle:w-full outline-none text-main font-bold"
             />
           </div>
@@ -83,6 +93,8 @@ export function Contact() {
             name=""
             id="message"
             placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="py-2 px-4 h-64 rounded outline-none text-main text-lg font-medium"
           />
           <button
