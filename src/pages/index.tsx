@@ -1,6 +1,7 @@
 import { AboutMe } from "../components/AboutMe";
 import { Apresentation } from "../components/Apresentation";
 import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Projects } from "../components/Projects";
 import { Techs } from "../components/Techs";
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Techs />
       <Contact />
+      <Footer />
     </div>
   );
 }
