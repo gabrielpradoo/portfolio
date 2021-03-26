@@ -53,13 +53,14 @@ export function Contact() {
             className="font-semibold text-blue-600"
             href="mailto:gdeoliveira.1999@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             gdeoliveira.1999@gmail.com
           </a>
         </p>
         <form
           id="form"
-          className="w-8/12 flex flex-col space-y-4 mt-6 max-midlle:w-9/12"
+          className="w-8/12 flex flex-col space-y-4 mt-6 max-midlle:w-10/12"
         >
           <div
             className="flex justify-between space-x-4 

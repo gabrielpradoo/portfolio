@@ -26,10 +26,18 @@ export function Apresentation() {
         >
           <img src="/icons/GitHub.svg" alt="GitHub" className="w-11 h-11" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/gabriel-do-prado-de-oliveira/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/Linkedin.svg" alt="Linkedin" className="w-11 h-11" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/gabrielpraado_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/icons/Instagram.svg"
             alt="Instagram"

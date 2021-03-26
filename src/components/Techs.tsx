@@ -6,11 +6,11 @@ interface CardProps {
 
 export function Card({ name, src, href }: CardProps) {
   return (
-    <div className="shadow-xl rounded flex flex-col space-x-2 p-3 items-center overflow-auto  w-32">
+    <div className="shadow-xl rounded flex flex-col space-y-2 p-3 items-center overflow-auto  w-32">
       <a
         href={href}
-        rel="noopener noreferrer"
         target="_blank"
+        rel="noopener noreferrer"
         className="w-32 h-32 flex items-center justify-center"
       >
         <img src={src} alt={`${name} logo`} className="w-24 py-2" />
@@ -64,6 +64,21 @@ const front = [
     src: "/icons/Sass.svg",
     href: "https://sass-lang.com/",
   },
+  {
+    name: "Styled-Components",
+    src: "https://avatars.githubusercontent.com/u/20658825?s=400&v=4",
+    href: "https://styled-components.com/",
+  },
+  {
+    name: "Material-UI",
+    src: "https://material-ui.com/static/logo_raw.svg",
+    href: "https://material-ui.com/",
+  },
+  {
+    name: "Tailwind CSS",
+    src: "/icons/Tailwind.svg",
+    href: "https://tailwindcss.com/",
+  },
 ];
 
 const back = [
@@ -81,6 +96,26 @@ const back = [
     name: "Express",
     src: "/icons/Express.svg",
     href: "https://expressjs.com/",
+  },
+];
+
+const tools = [
+  {
+    name: "Git",
+    src: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    href: "https://git-scm.com/",
+  },
+  {
+    name: "Figma",
+    src:
+      "https://cdn.shopify.com/s/files/1/0284/7024/7555/products/figma2x_1048x.png?v=1591893627",
+    href: "https://www.figma.com/",
+  },
+  {
+    name: "Notion",
+    src:
+      "https://produtive.me/wp-content/uploads/2019/08/notion-logo-no-background.png",
+    href: "https://www.notion.so/",
   },
 ];
 
@@ -105,7 +140,7 @@ export function Techs() {
           <h4 className="text-2xl font-semibold text-main">Languages</h4>
           <div
             id="Cards"
-            className="flex font-raj font-semibold w-1/2 max-midlle:w-3/4 max-md:w-full justify-between 
+            className="flex font-raj font-semibold w-1/2 max-midlle:w-3/4 max-md:w-full justify-between flex-wrap 
               max-sm:grid max-sm:grid-cols-2 max-sm:place-items-center
             "
           >
@@ -118,7 +153,7 @@ export function Techs() {
           <h4 className="text-2xl font-semibold text-main">Front-end</h4>
           <div
             id="Cards"
-            className="flex font-raj font-semibold w-1/2 max-midlle:w-3/4 max-md:w-full justify-between
+            className="flex font-raj font-semibold w-4/5 max-midlle:w-3/4 max-md:w-full items-center space-x-2 flex-wrap
               max-sm:grid max-sm:grid-cols-2 max-sm:place-items-center
             "
           >
@@ -136,6 +171,19 @@ export function Techs() {
             "
           >
             {back.map((item) => (
+              <Card name={item.name} src={item.src} href={item.href} />
+            ))}
+          </div>
+        </div>
+        <div id="Tools" className="w-full ">
+          <h4 className="text-2xl font-semibold text-main">Tools</h4>
+          <div
+            id="Cards"
+            className="flex font-raj font-semibold w-1/2 max-midlle:w-3/4 max-md:w-full justify-between
+              max-sm:grid max-sm:grid-cols-2 max-sm:place-items-center
+            "
+          >
+            {tools.map((item) => (
               <Card name={item.name} src={item.src} href={item.href} />
             ))}
           </div>

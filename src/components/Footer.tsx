@@ -4,6 +4,4 @@ export function Footer() {
       <p className="py-2"> Made by Gabriel Prado Dev 🚀</p>
     </footer>
   );
-
-  // DAR COMMIT NO FOOTER ANTES DE TUDO
 }

@@ -3,7 +3,7 @@ export function ProjectsCard() {
     {
       Name: "Gabriel do Prado - Personal Porfólio",
       Img: "/img/portfolio.png",
-      Url: "https://moveit-nlw99.vercel.app/",
+      Url: "/",
       Code: "https://github.com/praadin/portfolio",
       Description:
         "This is my personal portfolio made for people to see my projects and experiences.",
@@ -66,6 +66,8 @@ export function ProjectsCard() {
               <div className="flex space-x-3">
                 <a
                   href={item.Url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-2 py-1 bg-main text-gray-300 
              rounded-md hover:opacity-80"
                 >
@@ -73,6 +75,8 @@ export function ProjectsCard() {
                 </a>
                 <a
                   href={item.Code}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-2 py-1 bg-main text-gray-300 
              rounded-md hover:opacity-80"
                 >

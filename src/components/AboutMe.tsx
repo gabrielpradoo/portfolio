@@ -31,7 +31,7 @@ export function AboutMe() {
             About Me
           </h3>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1ah_lP0ohp5uLUUNU46niVKrxL55lQ1Gh/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-white text-main font-raj font-semibold rounded max-w-xs w-1/2 text-center"

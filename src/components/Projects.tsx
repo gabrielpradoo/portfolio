@@ -22,6 +22,18 @@ export function Projects() {
           "
       >
         <ProjectsCard />
+
+        <p className="pt-12 text-lg font-raj font-semibold text-center">
+          For more projects, please, access my{" "}
+          <a
+            href="https://github.com/praadin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-blue-600"
+          >
+            GitHub Profile
+          </a>
+        </p>
       </div>
     </section>
   );
