@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/praadin/portfolio">
-    <img alt="Open Weather Logo" src="./public/favicon.svg" width="350px" />
+    <img alt="Open Weather Logo" src="./public/favicon.svg" width="280px" />
   </a>
 </h1>
 
@@ -56,6 +56,6 @@
 
 <hr>
 
-## Link to Move.it
+## Link to Portfolio
 
 [Gabriel Prado Dev](https://gabrielprado-dev.vercel.app/)
